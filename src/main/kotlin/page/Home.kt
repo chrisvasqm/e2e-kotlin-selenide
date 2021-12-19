@@ -10,10 +10,11 @@ class Home : Page() {
         open("https://www.google.com")
     }
 
-    fun searchFor(text: String) {
-        `$`(By.name("q"))
-                .setValue("puppies")
-                .pressEnter()
+    fun searchFor(query: String) {
+        val searchBox = By.name("q")
+        `$`(searchBox)
+            .setValue(query)
+            .pressEnter()
     }
 
 }
