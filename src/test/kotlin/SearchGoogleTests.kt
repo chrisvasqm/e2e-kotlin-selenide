@@ -14,11 +14,9 @@ class SearchGoogleTests {
 
     @Test
     fun `Search for puppies`() {
-        val query = "Puppies"
-
         Home().apply {
             visit()
-            searchFor(query)
+            searchFor("Puppies")
         }
 
         assert(Search().hasResults())
