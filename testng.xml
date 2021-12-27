@@ -4,10 +4,9 @@
     <listeners>
         <listener class-name="listeners.RegressionListener" />
     </listeners>
-
     <test name="Regression Tests">
         <classes>
-            <class name="SearchGoogleTests" />
+            <class name="GoogleTests" />
         </classes>
     </test>
 </suite>
