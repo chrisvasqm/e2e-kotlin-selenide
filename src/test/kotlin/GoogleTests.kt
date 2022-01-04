@@ -4,7 +4,7 @@ import page.Search
 
 class GoogleTests : BaseTest() {
 
-    @Test
+    @Test(groups = ["sanity"])
     fun `Search for puppies`() {
         Home().apply {
             visit()
@@ -14,7 +14,7 @@ class GoogleTests : BaseTest() {
         assert(Search().hasResults())
     }
 
-    @Test
+    @Test(groups = ["sanity", "regression"])
     fun `Search for kitties`() {
         Home().apply {
             visit()
