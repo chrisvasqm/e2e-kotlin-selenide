@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="listeners.RegressionListener" />
     </listeners>
-    <test name="Regression Tests">
+    <test name="Regression Tests" parallel="methods" thread-count="2">
         <classes>
             <class name="GoogleTests" />
         </classes>
