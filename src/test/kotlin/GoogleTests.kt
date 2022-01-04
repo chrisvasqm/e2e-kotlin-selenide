@@ -14,4 +14,14 @@ class GoogleTests : BaseTest() {
         assert(Search().hasResults())
     }
 
+    @Test
+    fun `Search for kitties`() {
+        Home().apply {
+            visit()
+            searchFor("Kitties")
+        }
+
+        assert(Search().hasResults())
+    }
+
 }
